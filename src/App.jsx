@@ -66,6 +66,9 @@ setCurrentCards(prevCards => [...prevCards, ...drawnCards])
 
 setTotalScore(prevScore => prevScore + totalValue)
 
+const aces = drawnCards.filter(card => card.includes('Ace'))
+setAcePresent(aces.length > 0)
+
 }
 
 function handleLoss(){
