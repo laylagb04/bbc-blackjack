@@ -8,7 +8,7 @@ import stand from './Components/stand'
 import hit from './Components/hit'
 import bust from './components/bust'
 
-
+import CardImage from './components/CardImage'
 
 function App() {
 
@@ -49,7 +49,7 @@ setCurrentCards(drawnCards)
 setAllCards(updatedDeck)
 setGameStatus('Playing')
 
-
+console.log(drawnCards, 'deal')
 const aces = drawnCards.filter(card => card.includes('Ace'))
 setAcePresent(aces.length > 0)
 
@@ -65,7 +65,7 @@ setAllCards(updatedDeck)
 setCurrentCards(prevCards => [...prevCards, ...drawnCards])
 
 setTotalScore(prevScore => prevScore + totalValue)
-
+console.log(drawnCards, 'from hit')
 const aces = drawnCards.filter(card => card.includes('Ace'))
 setAcePresent(aces.length > 0)
 
@@ -116,6 +116,11 @@ return (
                  <button onClick={handleHit}>Hit</button>
                  <button onClick={stand}> Stand</button>
                   <h3> Your total is {totalScore} </h3>
+                
+                  {currentCards.map((card, index) =>  (
+<CardImage key={index} cardName={card} />
+                 ) )}
+                 
             </div>
   )
 )

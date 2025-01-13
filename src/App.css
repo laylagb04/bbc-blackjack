@@ -40,3 +40,15 @@
 .read-the-docs {
   color: #888;
 }
+
+
+.card-images{
+  width: 150px;
+  height:400px;
+  padding:10px
+}
+
+
+.card-images-div{
+float:left
+}
