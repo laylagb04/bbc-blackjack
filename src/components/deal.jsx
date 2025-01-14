@@ -2,6 +2,7 @@ function dealCards(cards){
    
     const updatedCards = [...cards]
 
+   
 let index1 = Math.floor(Math.random() * updatedCards.length)
 let card1 = updatedCards.splice(index1,1)[0]
 
