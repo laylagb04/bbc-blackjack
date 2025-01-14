@@ -43,12 +43,67 @@
 
 
 .card-images{
-  width: 150px;
+  width: 170px;
   height:400px;
-  padding:10px
+  padding:10px;
+  margin-bottom: 30px;
 }
 
 
 .card-images-div{
-float:left
+float:left;
+}
+
+button {
+  padding: 10px;
+  margin-right: 10px;
+
+}
+
+
+.all-cards-display{
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  gap:20px;
+  padding:20px
+}
+
+.cards-container{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap:160px
+}
+
+.players-section,
+.dealers-section {
+display:flex;
+flex-direction: column;
+align-items: center;
+}
+.player-cards,
+.dealer-cards{
+  margin-top: 10px;
+}
+
+.actual-cards{
+  display:flex;
+  gap:10px
+}
+
+.ace-buttons{
+  display:flex;
+  gap:10px
+}
+
+h2,h1, h3{
+  text-align: center;
+}
+
+.button-container{
+  display:flex;
+  gap: 10px;
+  justify-content: center;
 }
